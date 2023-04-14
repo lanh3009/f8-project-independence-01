@@ -8,4 +8,96 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #1ebfc1;
+}
+/* Common */
+.btn {
+    display: inline-block;
+    max-width: 186px;
+    padding: 20px 41px;
+    background: var(--primary-color);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ffffff;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Header */
+.header.fixed {
+    position: sticky;
+    top: -44px;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 52px 0 8px;
+}
+
+.header .nav {
+    margin-left: 215px;
+}
+
+.header .body .nav ul {
+    display: flex;
+}
+
+.header .nav li a {
+    padding: 8px 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #2f3a3b;
+}
+
+.header .action a.in-btn:hover,
+.header .nav li a:hover {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .nav li.active a {
+    font-weight: 600;
+    color: #2f3a3b;
+}
+
+.header .action {
+    margin-left: auto;
+}
+
+.header .action a.in-btn {
+    padding: 12px 24px;
+    color: #494949;
+}
+
+.header .action a.up-btn {
+    width: 108px;
+    padding: 12px 23px 12px 24px;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    background-color: #fff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+}
+
+.header .action a.up-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
 }
